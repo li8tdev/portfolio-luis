@@ -182,6 +182,24 @@ a:hover { color: var(--color-fg); }
 .footer a { color: var(--color-fg-3); }
 .footer a:hover { color: var(--color-lima); }
 
+/* ============ ARTÍCULOS RELACIONADOS (enlazado interno) ============ */
+.relacionados {
+  margin-top: 56px; padding-top: 28px;
+  border-top: 1px solid var(--color-line);
+}
+.relacionados h2 {
+  font-family: var(--font-display); font-weight: 700;
+  font-size: clamp(20px, 3vw, 28px); margin-bottom: 16px;
+}
+.relacionados ul { list-style: none; display: grid; gap: 10px; }
+.relacionados li { position: relative; padding-left: 20px; }
+.relacionados li::before {
+  content: "→"; position: absolute; left: 0; color: var(--color-lima);
+  font-family: var(--font-mono); font-size: 13px;
+}
+.relacionados a { color: var(--color-fg); }
+.relacionados a:hover { color: var(--color-lima); }
+
 /* ============ MOBILE ============ */
 @media (max-width: 720px) {
   .hero { min-height: 40vh; }

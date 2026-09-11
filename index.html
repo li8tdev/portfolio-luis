@@ -3,11 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
-    <title>Luis González | Web Designer & Developer in Colombia — e-commerce that sells</title>
-    <meta name="description" content="Web designer & developer in Colombia: websites, e-commerce stores and automations that turn visitors into paying customers. WordPress, React, Node. 6+ yrs, 71+ projects, 5.0★ on Workana. Reply same day." />
+    <title>Luis González | Web Designer & Developer in Colombia</title>
+    <meta name="description" content="Web designer & developer in Colombia: websites, online stores and automations that turn visitors into paying customers. 71+ projects, 5.0★. Reply the same day." />
     <meta name="robots" content="index,follow" />
     <link rel="canonical" href="https://byluis.design/" />
-    <link rel="alternate" hreflang="es-co" href="https://byluis.design/?lang=es" />
+    <!-- hreflang="es-co" a ?lang=es eliminado (2026-09-11): devolvía el MISMO HTML en inglés
+         (SPA con un solo prerender), así que era contradictorio para Google. El toggle ES/EN
+         queda solo como UX; las rutas /es/ /en/ reales son trabajo de una fase posterior. -->
     <link rel="alternate" hreflang="en" href="https://byluis.design/" />
     <link rel="alternate" hreflang="x-default" href="https://byluis.design/" />
     <meta name="theme-color" content="#050505" />
@@ -29,10 +31,12 @@
     <meta property="og:locale" content="en_US" />
     <meta property="og:locale:alternate" content="es_CO" />
     <meta name="twitter:card" content="summary_large_image" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;700&family=DM+Sans:wght@400;500;600&family=Space+Mono&display=swap" rel="stylesheet" />
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%23050505'/><text x='50' y='68' font-family='sans-serif' font-size='52' font-weight='bold' fill='%23BFF747' text-anchor='middle'>LG</text></svg>" />
+    <!-- Fuentes self-hosted en /fonts: ya no se cargan fuentes de terceros (render-blocking) -->
+    <link rel="preload" href="./fonts/roboto-condensed-700-latin.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="stylesheet" href="./fonts/fonts.css" />
+    <link rel="icon" href="./favicon.ico" sizes="any" />
+    <link rel="icon" type="image/png" sizes="192x192" href="./icon-192.png" />
+    <link rel="apple-touch-icon" href="./icon-192.png" />
     <script type="application/ld+json" id="seo-jsonld">
     {
       "@context": "https://schema.org",
@@ -71,7 +75,7 @@
       ]
     }
     </script>
-    <script type="module" crossorigin src="./assets/index-CGK0cEg-.js"></script>
+    <script type="module" crossorigin src="./assets/index-bTlbgvD6.js"></script>
     <link rel="stylesheet" crossorigin href="./assets/index-DxIf5kpZ.css">
   </head>
   <body>
@@ -82,7 +86,15 @@
       <div id="preloader-bar-wrap"><div id="preloader-bar"></div></div>
     </div>
     <script>setTimeout(function(){var b=document.getElementById("preloader-bar");if(b)b.style.width="100%";},60);</script>
-    <div id="root"><header class="hero">
+    <div id="root"><nav class="nav-estatico" aria-label="Navegación principal">
+  <a href="/">Home</a>
+  <a href="/#servicios">Services</a>
+  <a href="/#proyectos">Work</a>
+  <a href="/#sobre-mi">About</a>
+  <a href="/blog/">Blog</a>
+  <a href="/#contacto">Contact</a>
+</nav>
+<header class="hero">
   <span>06 — Web Designer & Developer · Colombia</span>
   <h1>LUIS GONZÁLEZ<span>.</span></h1>
   <p>I build websites, online stores and automations that turn visitors into paying customers. Six years in, every project ships with real support from start to finish.</p>
@@ -114,6 +126,14 @@
 </section>
 <footer>
   <p>Web Design in Colombia · byluis.design — hand-coded, no templates. © 2026 Luis González.</p>
-</footer></div>
+  <nav aria-label="Footer">
+    <a href="/blog/">Blog: web design guides for Colombia</a> ·
+    <a href="/blog/cuanto-cuesta-crear-una-pagina-web-en-colombia-2026/">How much does a website cost in Colombia?</a> ·
+    <a href="/blog/como-crear-una-pagina-web-para-mi-negocio-2026/">How to create your business website</a> ·
+    <a href="/blog/como-posicionar-mi-pagina-web-en-google-2026/">How to rank on Google</a> ·
+    <a href="/blog/como-crear-una-tienda-online-que-venda-2026/">How to build an online store</a> ·
+    <a href="/blog/que-es-una-landing-page-2026/">What is a landing page?</a>
+  </nav>
+</footer></div>
   </body>
 </html>
