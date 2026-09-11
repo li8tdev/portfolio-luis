@@ -8,7 +8,7 @@
   --color-line: #1a1a1a;
   --color-fg: #ffffff;
   --color-fg-2: #888888;
-  --color-fg-3: #555555;
+  --color-fg-3: #7d7d7d;
   --color-lima: #bff747;
   --color-ok: #00c452;
   --font-display: "Roboto Condensed", sans-serif;
@@ -124,8 +124,15 @@ a:hover { color: var(--color-fg); }
   text-transform: uppercase; color: var(--color-lima);
   padding: 12px 14px; border-bottom: 1px solid var(--color-lima);
 }
+/* el estilo de cabecera es SOLO para el thead: las <th scope="row"> del tbody
+   (etiquetas de fila, a11y) llevan el mismo aspecto que las celdas */
+.tabla-precios tbody th {
+  font-family: inherit; font-size: inherit; letter-spacing: normal; text-transform: none;
+  font-weight: 600; color: var(--color-fg);
+  padding: 13px 14px; border-bottom: 1px solid var(--color-line); vertical-align: top;
+}
 .tabla-precios td { padding: 13px 14px; border-bottom: 1px solid var(--color-line); vertical-align: top; }
-.tabla-precios tr:hover td { background: rgba(191, 247, 71, .035); }
+.tabla-precios tr:hover td, .tabla-precios tbody tr:hover th { background: rgba(191, 247, 71, .035); }
 .tabla-precios td:first-child { font-weight: 600; color: var(--color-fg); }
 .tabla-precios .mono { font-family: var(--font-mono); font-size: .92em; white-space: nowrap; }
 
