@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <title>Luis González | Web Designer & Developer in Colombia</title>
+    <meta name="description" content="Web designer & developer in Colombia: websites, online stores and automations that turn visitors into paying customers. 71+ projects, 5.0★. Reply the same day." />
+    <meta name="robots" content="index,follow" />
+    <link rel="canonical" href="https://byluis.design/en/" />
+    <link rel="alternate" hreflang="es-co" href="https://byluis.design/" />
+    <link rel="alternate" hreflang="es" href="https://byluis.design/" />
+    <link rel="alternate" hreflang="en" href="https://byluis.design/en/" />
+    <link rel="alternate" hreflang="x-default" href="https://byluis.design/" />
+    <!-- Rutas reales por idioma (2026-09-11): / es español (mercado principal) y /en/ es inglés.
+         Las dos versiones se prerenderizan por separado (scripts/prerender.mjs) para que Google
+         tenga una URL indexable en cada idioma; el toggle del sitio navega entre ellas. -->
+    <meta name="theme-color" content="#050505" />
+    <style>
+      #root { opacity: 0; transition: opacity .45s ease; }
+      #root.ready { opacity: 1; }
+      #preloader { position: fixed; inset: 0; z-index: 9999; background: #050505; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 18px; }
+      #preloader-label { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 11px; letter-spacing: .22em; color: #8a8a8a; }
+      /* Cargador: estatua CC0 girando (WebP animado, 55 KB, 28 fotogramas). Sin texto a proposito:
+         no depende del idioma ni de JS, y no hay nada que traducir en el prerender. */
+      #preloader-estatua { width: clamp(120px, 38vw, 220px); height: auto; display: block; }
+      @media (prefers-reduced-motion: reduce) { #preloader-estatua { display: none; } }
+      #preloader-bar-wrap { width: 220px; height: 2px; background: #1e1e1e; overflow: hidden; border-radius: 2px; }
+      #preloader-bar { height: 100%; width: 0%; background: #BFF747; transition: width 1.3s ease; }
+    </style>
+    <meta property="og:title" content="Luis González | Web Designer & Developer in Colombia" />
+    <meta property="og:description" content="Web designer & developer in Colombia: websites, online stores and automations that turn visitors into paying customers. 71+ projects, 5.0★. Reply the same day." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://byluis.design/en/" />
+    <meta property="og:image" content="https://byluis.design/og-cover.png" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:locale:alternate" content="es_CO" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <!-- Fuentes self-hosted en /fonts: ya no se cargan fuentes de terceros (render-blocking) -->
+    <link rel="preload" href="/fonts/roboto-condensed-700-latin.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="stylesheet" href="/fonts/fonts.css" />
+    <link rel="icon" href="/favicon.ico" sizes="any" />
+    <link rel="icon" type="image/png" sizes="192x192" href="/icon-192.png" />
+    <link rel="apple-touch-icon" href="/icon-192.png" />
+    <script type="application/ld+json" id="seo-jsonld">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "name": "Luis González",
+      "jobTitle": "Web Designer & Developer",
+      "url": "https://byluis.design",
+      "image": "https://byluis.design/og-cover.png",
+      "knowsAbout": [
+        "Web Design",
+        "E-commerce",
+        "React",
+        "WordPress",
+        "Node"
+      ],
+      "sameAs": [
+        "https://github.com/li8tdev"
+      ]
+    },
+    {
+      "@type": "ProfessionalService",
+      "name": "Luis González — Web Design & Development",
+      "url": "https://byluis.design",
+      "image": "https://byluis.design/og-cover.png",
+      "priceRange": "$",
+      "telephone": "+573161514667",
+      "email": "luis@luiswebstudio.com",
+      "areaServed": {
+        "@type": "Country",
+        "name": "Colombia"
+      },
+      "sameAs": [
+        "https://github.com/li8tdev",
+        "https://www.linkedin.com/in/luisgonzalezmu"
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Services",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Web Design & Development"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "E-commerce (Shopify, WooCommerce)"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Automations & integrations"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Branding & UI/UX"
+            }
+          }
+        ]
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5.0",
+        "reviewCount": "71"
+      }
+    }
+  ]
+}
+</script>
+    <script type="module" crossorigin src="/assets/index-C33PUE2a.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-1LB_6ny-.css">
+  </head>
+  <body>
+    <!-- Preloader estático (visible desde el primer frame; lo quita React al montar) -->
+    <div id="preloader" aria-hidden="true">
+      <span id="preloader-label">PORTFOLIO · BYLUIS.DESIGN</span>
+      <img id="preloader-estatua" src="/assets/loader-estatua.webp" alt="" width="260" height="317" decoding="async" />
+      <div id="preloader-bar-wrap"><div id="preloader-bar"></div></div>
+    </div>
+    <!-- OJO: aqui NO va un <link rel=preload as=fetch> del buda. Se probo el 2026-09-23 y el loader de
+         three usa XHR (no fetch), asi que el preload NO se reutiliza: descargaba los 2,59 MB dos veces
+         en paralelo y el modelo tardaba 7,6 s en vez de 2,1 s (medido con scripts/medir_loader_buda.py). -->
+    <!-- La barra del cargador NO se llena sola: refleja la carga real del buda (eventos
+         'hero-progreso' que manda el hero). Aqui solo se le da un arranque minimo. -->
+    <script>
+      setTimeout(function(){var b=document.getElementById("preloader-bar");if(b)b.style.width="6%";},60);
+    </script>
+    <div id="root"><nav class="nav-estatico" aria-label="Main navigation">
+  <a href="/en/">Home</a>
+  <a href="#servicios">Services</a>
+  <a href="#destacados">Highlights</a>
+  <a href="/en/casos/">Case studies</a>
+  <a href="#proyectos">Work</a>
+  <a href="#sobre-mi">About</a>
+  <a href="/blog/">Blog</a>
+  <a href="#contacto">Contact</a>
+</nav>
+<header class="hero">
+  <span>06 — Web Designer &amp; Developer · Colombia</span>
+  <h1>LUIS GONZÁLEZ<span>.</span></h1>
+  <p>I build websites, online stores and automations that turn visitors into paying customers. Six years in, every project ships with real support from start to finish.</p>
+  <p><strong>Web designer &amp; developer in Colombia</strong>: websites, online stores and automations. WordPress, React, Node.</p>
+</header>
+<section class="servicios">
+  <h2>What I do — Web Design &amp; E-commerce Development in Colombia</h2>
+  <h3>Websites that sell (WordPress/React)</h3>
+  <p>Fast, good-looking pages built with one goal: turning visits into inquiries.</p>
+  <h3>Online stores — E-commerce (Shopify &amp; WooCommerce)</h3>
+  <p>E-commerce with catalog, payments and shipping working end to end.</p>
+  <h3>Automations &amp; integrations</h3>
+  <p>APIs, payment gateways, CRM. Your business keeps working while you sleep.</p>
+  <h3>Design &amp; branding</h3>
+  <p>Identity, logo and art direction so your business looks like what it is.</p>
+</section>
+<section class="destacados">
+  <h2>Case studies: websites, online stores and automations</h2>
+  <p>Six projects told the way they closed — the client's challenge, the approach and what ended up working — with each real stack and a link to the live site.</p>
+  <nav aria-label="Case studies">
+    <a href="/en/casos/domco/">Domco Real Estate Platform</a> ·
+    <a href="/en/casos/realtyland/">Realtyland Real Estate Blog</a> ·
+    <a href="/en/casos/greenwich/">Greenwich Peninsula FC</a> ·
+    <a href="/en/casos/sk-recargas/">SK Recargas FF</a> ·
+    <a href="/en/casos/roadmap-game/">The Roadmap Game</a> ·
+    <a href="/en/casos/voltra/">Voltra Gym Equipment</a>
+  </nav>
+</section>
+<section class="proyectos">
+  <h2>Portfolio: 71+ real web projects</h2>
+  <p>Websites, online stores and branding projects built for clients in Colombia and worldwide.</p>
+</section>
+<section class="sobre">
+  <h2>The studio — 6+ years, 5.0★ on Workana</h2>
+  <p>Hi, I'm Luis González. Web designer and developer with 6+ years building sites that turn visitors into clients. I don't ship "pages" — I ship results: a store that sells, a landing that captures, an automation that saves hours.</p>
+  <p>I work hand in hand with clients, from kickoff to launch, with real communication and support after delivery. 71+ projects, 71 reviews, 5.0★ on Workana.</p>
+</section>
+<section class="contacto">
+  <h2>Let's talk about your website</h2>
+  <p>Have a project in mind? Send me a message and I'll reply the same day. WhatsApp +573161514667 · luis@luiswebstudio.com · byluis.design</p>
+</section>
+<footer>
+  <p>Web Design in Colombia · byluis.design — hand-coded, no templates. © 2026 Luis González.</p>
+  <p>Header 3D model: <a href="https://sketchfab.com/3d-models/the-buddha-statue-in-a-mountain-53d144d6c081439f9aa5dc1b753ce1ce">“The Buddha statue in a mountain”</a> by <a href="https://sketchfab.com/AshSkag">AshSkag</a> — CC BY license.</p>
+  <nav aria-label="Footer">
+    <a href="/blog/">Blog: web design guides for Colombia</a> ·
+    <a href="/blog/cuanto-cuesta-crear-una-pagina-web-en-colombia-2026/">How much does a website cost in Colombia?</a> ·
+    <a href="/blog/como-crear-una-pagina-web-para-mi-negocio-2026/">How to create your business website</a> ·
+    <a href="/blog/como-posicionar-mi-pagina-web-en-google-2026/">How to rank on Google</a> ·
+    <a href="/blog/como-crear-una-tienda-online-que-venda-2026/">How to build an online store</a> ·
+    <a href="/blog/que-es-una-landing-page-2026/">What is a landing page?</a>
+  </nav>
+</footer></div>
+  </body>
+</html>
