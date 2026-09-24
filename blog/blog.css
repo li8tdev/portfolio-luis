@@ -211,7 +211,7 @@ a:hover { color: var(--color-fg); }
   max-width: 1060px; margin: 0 auto; padding: calc(var(--nav-h) + 56px) var(--gut) 80px;
 }
 .grid-blog .label { font-family: var(--font-mono); font-size: var(--fs-mono); letter-spacing: var(--ls-label); color: var(--color-lima); text-transform: uppercase; margin-bottom: 16px; }
-.grid-blog h1 { font-family: var(--font-display); font-weight: 700; font-size: var(--fs-blog-h1); line-height: .94; margin-bottom: 12px; letter-spacing: var(--ls-tight); text-transform: uppercase; }
+.grid-blog h1 { font-family: var(--font-display); font-weight: 700; font-size: var(--fs-blog-h1); line-height: .94; margin-bottom: clamp(28px, 4vw, 44px); letter-spacing: var(--ls-tight); text-transform: uppercase; }
 .grid-blog .intro { color: var(--color-fg-2); max-width: 60ch; margin-bottom: 48px; font-family: var(--font-display); font-weight: 400; font-size: var(--fs-h4); line-height: 1.3; }
 .tarjetas { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 18px; }
 .tarjeta {
